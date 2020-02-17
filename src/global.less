@@ -1,0 +1,66 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.ant-badge-count {
+  z-index: 10;
+  width: 16px;
+  height: 16px;
+  /* padding: 6px; */
+  color: #fff;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 16px;
+  white-space: nowrap;
+  text-align: center;
+  background: #f5222d;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #fff;
+}
+.ant-pro-sider-menu-logo h1 {
+  color: #ee4949 !important;
+}
